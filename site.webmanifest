@@ -1,0 +1,16 @@
+{
+  "name": "My Web App",
+  "short_name": "WebApp",
+  "description": "A description of your web app.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/src/assets/core/Logo.webp",
+      "sizes": "754x754",
+      "type": "image/png"
+    }
+  ]
+}

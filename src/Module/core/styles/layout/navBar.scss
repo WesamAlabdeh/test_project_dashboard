@@ -1,0 +1,90 @@
+.NavBar {
+  $space-inline: 30px;
+
+  background-color: var(--bg);
+  height: var(--navBarHeight);
+  width: calc(100% - $space-inline * 2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--border-radius);
+  padding-inline: $space-inline;
+  @include Shadow;
+
+  
+   header {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-block: $space;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color: var(--text);
+
+    img {
+      border-radius: var(--logoBorderRadius);
+      width: var(--logoWidth);
+      max-height: 80px;
+      object-fit: contain;
+      transition: 0.3s ease-in-out;
+    }
+  }
+
+  .NavBarRight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .UNK_User {
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  }
+}
+.translate-menu-dropdown-link {
+  all: unset;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  gap: 10px;
+}
+
+
+.NavBarMenu{
+  display: none;
+
+}
+.ant-drawer:has(.SideBar){
+  display: none;
+}
+
+@include respond-to('mobile') {
+  .ant-drawer:has(.SideBar){
+    display: block;
+  }
+  
+.NavBar{
+
+  .NavBarMenu{
+    display: block;
+  
+  }
+  .NavBarRight{
+    display: none;
+  }
+}
+
+  .SideBar{
+    >header{
+      display: none;
+    }
+    >main{
+      margin-top: 0 !important;
+      padding-inline: 0 !important;
+    }
+  }
+
+  
+}

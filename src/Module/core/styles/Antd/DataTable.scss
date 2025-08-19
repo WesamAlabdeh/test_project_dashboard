@@ -1,0 +1,17 @@
+.ant-table-cell:has(.even-row) {
+  border-right: 4px solid var(--primary);
+}
+.ar {
+  .ant-table-cell:has(.even-row) {
+    border-left: 4px solid var(--primary);
+    border-right: transparent;
+  }
+}
+.DataTable {
+}
+
+.ActionWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}

@@ -1,0 +1,38 @@
+.notFoundPage {
+  background: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: white;
+    display: inline;
+    margin-bottom: 10px;
+  }
+  h6 {
+    display: inline;
+    margin-inline: 20px;
+    height: 140px !important;
+
+    width: 20px;
+  }
+  .containerNotFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      border: none;
+      outline: none;
+      padding: 8px;
+      border-radius: 10px;
+
+      margin-inline: 30px;
+    }
+  }
+}

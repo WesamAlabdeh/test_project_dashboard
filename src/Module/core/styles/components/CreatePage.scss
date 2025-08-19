@@ -1,0 +1,23 @@
+.CreatePage {
+  background: var(--bg);
+  @include Shadow;
+  padding: 20px;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 70vh;
+  > header {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+  > main {
+  }
+  > button {
+    align-self: center;
+  }
+}

@@ -1,0 +1,177 @@
+.Auth {
+  background: url('../../../../assets/core/LoginBg.jpg');
+  height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .InAuth {
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 80vh;
+    width: 62vw;
+    border-radius: 5px;
+    width: 40vw;
+  }
+  .LoginForm {
+    display: flex;
+    flex-direction: column;
+ 
+
+    .LoginNav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      h5 {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .submit_login {
+    width: 100%;
+    font-size: 1.1em;
+    height: 40px;
+  }
+  .LeftCol,
+  .RightCol {
+    padding-inline: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30vw;
+  }
+  .LeftCol {
+    background-color: #edf4f4;
+  }
+
+  .imgFluid {
+    width: 30vw;
+    height: 100%;
+    max-width: none !important;
+  }
+  .LoginH4 {
+    width: 90%;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .Reserved {
+    transform: translatex(15px) translatey(44px);
+  }
+  .LoginForm {
+    .Logo {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .LeftCol {
+      display: none;
+    }
+
+    .LoginForm {
+      .Logo {
+        // position: absolute;
+        display: block;
+        width: 150px;
+        transform: translate(80px, -40px);
+      }
+    }
+    .LoginH4 {
+      text-align: center;
+    }
+    .RightCol {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: fit-content;
+      width: 100%;
+    }
+
+    .submit_login {
+      width: 100% !important;
+    }
+    .InAuth {
+      height: 550px !important;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .LoginForm {
+      .Logo {
+        // position: absolute;
+        display: block;
+        width: 120px;
+        transform: translate(50px, -20px);
+      }
+    }
+    .RightCol {
+      padding-inline: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px !important;
+    }
+  }
+}
+
+.Logo {
+  width: 100%;
+}
+
+.dark {
+  .LeftCol {
+    background-color: #343434;
+  }
+  .LoginH4,
+  .Reserved {
+    color: #fff;
+  }
+  .LoginNav {
+    h5 {
+      color: #fff;
+    }
+  }
+}
+.glass {
+  .LeftCol {
+    background-color: inherit;
+  }
+  .LoginH4,
+  .Reserved {
+    color: #000;
+  }
+  .LoginNav {
+    h5 {
+      color: #000;
+    }
+  }
+}
+
+.ar {
+  .LoginForm {
+    .Logo {
+      transform: translate(-90px, -40px);
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ar {
+    .LoginForm {
+      .Logo {
+        transform: translate(-70px, -30px) !important;
+      }
+    }
+  }
+}
+
+.logo_link {
+  display: none !important;
+}

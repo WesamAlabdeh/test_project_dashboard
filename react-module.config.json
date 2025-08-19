@@ -1,0 +1,17 @@
+{
+  "folders": [
+    "apis",
+    "enums",
+    "types",
+    "components",
+    "pages",
+    "states",
+    "hooks",
+    "utils",
+    "hooks",
+    "styles"
+  ],
+  "base_folder_name": "Module",
+  "git_keep": true,
+  "inside_src": true
+}

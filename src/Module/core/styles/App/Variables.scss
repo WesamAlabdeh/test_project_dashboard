@@ -1,0 +1,29 @@
+:root {
+  --primary: #3c65f5;
+  --secondary: white;
+  --text: black;
+  --text2:#66789c;
+  --placeholder: rgb(0, 0, 0, 0.3);
+  --bg: #ffffff  ;
+  --bg2: #f2f4fa;
+    --sideBarWidth: 260px;
+  --sideBarCloseWidth: 60px;
+  --logoWidth: 50px;
+  --logoWidthMobile: 40px;
+  --logoBorderRadius: 0%;
+  --sideBarOpenWidth: 260px;
+  --transition: 0.5s ease-in-out;
+  --navBarHeight: 80px;
+  --border-radius: 3px;
+}
+
+:root:has(.dark) {
+  --primary: #3c65f5; /* Keep the primary color consistent */
+  --secondary: #ffffff; /* Secondary color as white for contrast */
+  --text: #ffffff; /* Text color to white for readability */
+  --text2: #c0c7dc; /* Lighter shade for secondary text */
+  --placeholder: rgba(255, 255, 255, 0.6); /* White with transparency */
+  --bg: #121212; /* Dark background */
+  --bg2: #1e1e1e; /* Slightly lighter dark background */
+
+}

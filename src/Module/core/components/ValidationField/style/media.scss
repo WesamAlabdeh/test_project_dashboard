@@ -1,0 +1,23 @@
+$breakpoint-mobile: 600px;
+$breakpoint-tablet: 1024px;
+$breakpoint-laptop: 1424px;
+
+@mixin validation-field-respond-to($media) {
+  @if $media == 'mobile' {
+    @media (max-width: $breakpoint-mobile) {
+      @content;
+    }
+  } @else if $media == 'tablet' {
+    @media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  } @else if $media == 'desktop' {
+    @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-laptop) {
+      @content;
+    }
+  } @else if $media == 'laptop' {
+    @media (min-width: $breakpoint-laptop) {
+      @content;
+    }
+  }
+}
